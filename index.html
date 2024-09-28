@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -51,9 +51,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Career</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -68,22 +68,30 @@
             <h1 class="display-5 fw-bold lh-1 mb-3">안녕하세요, 박범식입니다!</h1>
             <p class="lead">사람들이 필요로 하는 서비스를 개발하는 개발자를 지향합니다.<br>건국대학교 컴퓨터공학부 3학년이며, Server 관련한 공부하고 있습니다.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="https://github.com/SIKU-KR" target="_blank" class="btn btn-outline-secondary btn-lg px-4">GitHub</a>
-                <a href="https://velog.io/@siku-kr" target="_blank" class="btn btn-outline-secondary btn-lg px-4">Blog</a>
+                <a href="https://github.com/SIKU-KR" target="_blank" class="btn btn-primary btn-lg px-4">GitHub</a>
+                <a href="https://velog.io/@siku-kr" target="_blank" class="btn btn-primary btn-lg px-4">Blog</a>
             </div>
+            <br>
+            <h3 class="pb-2 border-bottom">Careers</h3>
+            <dl class="row">
+              <dt class="col-sm-4">GDG on Campus Konkuk</dt>
+              <dd class="col-sm-5">24-25 Member (now)</dd>
+              <dt class="col-sm-4">Project-X Konkuk</dt>
+              <dd class="col-sm-5">Mentor</dd>
+            </dl>
           </div>
         </div>
       </div>
 
       <div class="container px-4 py-5" id="stacks">
         <h2 class="pb-2 border-bottom">Stacks</h2>
-    
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
           <div class="col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#spring"/></svg>
             <div>
               <h4 class="fw-bold mb-0">Spring</h4>
               <p>Spring Boot를 사용하여 RestAPI를 개발할 수 있습니다.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -91,13 +99,15 @@
             <div>
               <h4 class="fw-bold mb-0">Java</h4>
               <p>JDK 17까지의 기능들을 이해하고 사용합니다. JPA를 사용할 수 있습니다.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
             </div>
           </div>
           <div class="col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#python"/></svg>
             <div>
               <h4 class="fw-bold mb-0">Python</h4>
-              <p>데이터분석 및 시각화, 다양한 알고리즘 PS가 가능합니다.</p>
+              <p>데이터분석 및 시각화, 다양한 알고리즘 문제해결이 가능합니다.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -105,6 +115,7 @@
             <div>
               <h4 class="fw-bold mb-0">RDBMS</h4>
               <p>관계형 데이터베이스 시스템을 이해하고 복잡한 Query를 작성할 수 있습니다.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -112,6 +123,7 @@
             <div>
               <h4 class="fw-bold mb-0">Git, Github</h4>
               <p>Git과 GitHub를 사용한 협업이 가능합니다.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -119,39 +131,33 @@
             <div>
               <h4 class="fw-bold mb-0">AWS</h4>
               <p>클라우드 웹서비스를 사용하여 서버 또는 서버리스로 서비스를 구현할 수 있습니다.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">자세히보기</button>
             </div>
           </div>
-          
         </div>
+          <p>추가로 <strong>Kotlin, Flutter, C/C++, HTML, CSS, JavaScript</strong> 개발 경험이 있습니다.</p>
       </div>
+
+      
 
       <div class="album py-5 bg-light" id="projects">
         <div class="container">
+          <h2 class="pb-2 border-bottom">Projects</h2>
+
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="./media/holybean-app.png" class="bd-placeholder-img card-img-top" alt="Holybean Project Image" width="100%" height="225">
+                    <img src="./media/holybean.jpg" class="bd-placeholder-img card-img-top" alt="Holybean Project Image" width="100%" height="225">
       
                   <div class="card-body">
-                    <p class="card-text"><b>HolyBean</b><br>실제 사용중인 Android POS 애플리케이션입니다.</p>
+                    <h5>
+                      <span class="badge bg-success">Server</span>&nbsp
+                      <span class="badge bg-secondary">Android</span>
+                    </h5>
+                    <p class="card-text"><b>HolyBean</b><br>제가 다니는 교회에서 사용중인 Android POS Application입니다.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary">자세히보기</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card shadow-sm">
-                    <img src="./media/holybean-server.png" class="bd-placeholder-img card-img-top" alt="Holybean Project Image" width="100%" height="225">
-      
-                  <div class="card-body">
-                    <p class="card-text"><b>HolyBean-Server</b><br>실제 사용중인 POS Server 애플리케이션입니다.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary">자세히보기</button>
+                        <button type="button" class="btn btn-primary">자세히보기</button>
                       </div>
                     </div>
                   </div>
@@ -163,10 +169,13 @@
                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
       
                   <div class="card-body">
+                    <h5>
+                      <span class="badge bg-success">Server</span>&nbsp
+                    </h5>
                     <p class="card-text"><b>Unspace</b><br>건국대학교의 X-Space 공간대여 앱&XR 복합서비스입니다.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-primary">자세히보기</button>
+                        <button type="button" class="btn btn-primary">자세히보기</button>
                       </div>
                     </div>
                   </div>
