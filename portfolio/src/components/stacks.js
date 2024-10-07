@@ -9,7 +9,6 @@ function StackItem({ iconId, title, description, buttonText }) {
       <div>
         <h4 className="fw-bold mb-0">{title}</h4>
         <p>{description}</p>
-        <button type="button" className="btn btn-sm btn-outline-secondary">{buttonText}</button>
       </div>
     </div>
   );
@@ -40,8 +39,8 @@ function Stacks() {
         />
         <StackItem 
           iconId="sql" 
-          title="RDBMS" 
-          description="관계형 데이터베이스 시스템을 이해하고 복잡한 Query를 작성할 수 있습니다."
+          title="Database" 
+          description="RDB(MariaDB, SQLite)와 NoSQL(MongoDB)를 사용할 수 있습니다."
           buttonText="자세히보기" 
         />
         <StackItem 

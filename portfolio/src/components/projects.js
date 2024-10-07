@@ -53,7 +53,7 @@ function Projects() {
             ]}
             title="HolyBean"
             description="제가 다니는 교회에서 사용중인 Android POS Application입니다."
-            link="https://holybean.example.com"
+            link="#"
           />
 
           <ProjectCard
@@ -64,7 +64,7 @@ function Projects() {
             ]}
             title="Unspace"
             description="건국대학교의 X-Space 공간대여 앱&XR 복합서비스입니다."
-            link="https://unspace.example.com"
+            link="#"
           />
         </div>
       </div>
