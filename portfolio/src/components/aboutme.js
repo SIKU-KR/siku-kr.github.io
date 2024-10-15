@@ -22,11 +22,12 @@ function Aboutme(){
         <img src="/img/main.jpg" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"/>
       </div>
       <div className="col-lg-6">
-        <h1 className="display-5 fw-bold lh-1 mb-3">안녕하세요, 박범식입니다!</h1>
+        <h1 className="display-5 fw-bold lh-1 mb-3">안녕하세요,</h1>
+        <h1 className="display-5 fw-bold lh-1 mb-3">박범식입니다!</h1>
         <p className="lead">사람들이 필요로 하는 서비스를 개발하는 개발자를 지향합니다.<br/>건국대학교 컴퓨터공학부 3학년이며, Server 관련한 공부하고 있습니다.</p>
         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
             <PrimaryButton link="https://github.com/SIKU-KR" title="GitHub"/>
-            <PrimaryButton link="https://velog.io/@siku-kr" title="Blog"/>
+            <PrimaryButton link="https://cseant.tistory.com/" title="Blog"/>
         </div>
         <br/>
         <h3 className="pb-2 border-bottom">Careers</h3>

@@ -40,10 +40,11 @@ function ProjectCard({ imageSrc, altText, badges, title, description, link }) {
 function Projects() {
   return (
     <div className="album py-5 bg-light" id="projects">
-      <div className="container">
+      <div className="container col-xxl-8">
         <h2 className="pb-2 border-bottom">Projects</h2>
 
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {/* 한 행에 두 개씩 배치되도록 설정 */}
+        <div className="row row-cols-1 row-cols-md-2 g-3">
           <ProjectCard
             imageSrc="/img/holybean.jpg"
             altText="Holybean Project Image"
@@ -53,10 +54,11 @@ function Projects() {
             ]}
             title="HolyBean"
             description="제가 다니는 교회에서 사용중인 Android POS Application입니다."
-            link="#"
+            link="/docs/holybean/holybean.html"
           />
 
-          <ProjectCard
+          {/* 추가 카드를 활성화하면 이곳에 카드가 배치됩니다 */}
+          {/* <ProjectCard
             imageSrc={null}
             altText="Unspace Project Image"
             badges={[
@@ -65,7 +67,7 @@ function Projects() {
             title="Unspace"
             description="건국대학교의 X-Space 공간대여 앱&XR 복합서비스입니다."
             link="#"
-          />
+          /> */}
         </div>
       </div>
     </div>
