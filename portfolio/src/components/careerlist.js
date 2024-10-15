@@ -33,10 +33,8 @@ function Career({ logoSrc, companyName, period, description, tags, careerItems }
     <div className="container py-3">
       <div className="row">
         {/* Left Column: Logo with right border */}
-        <div className="col-md-4 d-flex justify-content-end pe-4" style={{ borderRight: "2px solid #ddd" }}>
-          {" "}
-          {/* border 추가 */}
-          <img src={logoSrc} alt="Company Logo" className="img-fluid" style={{ width: "125px", height: "125px" }} />
+        <div className="col-md-4 d-flex justify-content-center pe-4 career-logo-border" style={{ borderRight: "2px solid #ddd" }}>
+          <img src={logoSrc} alt="Company Logo" className="img-fluid mb-3" style={{ width: "125px", height: "125px" }} />
         </div>
 
         {/* Right Column: Career Details */}
