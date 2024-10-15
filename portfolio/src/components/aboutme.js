@@ -21,7 +21,7 @@ function Aboutme() {
     { iconClass: "bi bi-geo-alt", title: "위치", description: "서울특별시 광진구" },
     { iconClass: "bi bi-telephone", title: "연락처", description: "010-5209-3212" },
     { iconClass: "bi bi-envelope", title: "이메일", description: "bumshik0126@gmail.com" },
-    { iconClass: "bi bi-pencil", title: "학력", description: "건국대학교 컴퓨터공학부" },
+    { iconClass: "bi bi-pencil", title: "학력", description: "건국대학교 컴퓨터공학부(3학년)" },
   ];
 
   return (

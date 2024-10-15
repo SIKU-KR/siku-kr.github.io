@@ -5,6 +5,7 @@ import Aboutme from './components/aboutme';
 import Stacks from './components/stacks';
 import Archive from './components/Archive';
 import Projects from './components/projects';
+import Careers from './components/careers';
 import Footer from './components/footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Stacks></Stacks>
       <Archive></Archive>
       <Projects></Projects>
+      <Careers></Careers>
       <Footer></Footer>
     </div>
   );

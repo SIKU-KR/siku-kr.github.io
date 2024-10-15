@@ -22,6 +22,7 @@ function Navbar() {
             <NavLink link="#stacks" title="Stacks" />
             <NavLink link="#archiving" title="Archiving" />
             <NavLink link="#projects" title="Projects" />
+            <NavLink link="#careers" title="Careers" />
           </ul>
         </div>
       </div>
