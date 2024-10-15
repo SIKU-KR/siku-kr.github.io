@@ -7,7 +7,7 @@ function ProjectCard({ imageSrc, altText, badges, title, description, link }) {
         {imageSrc ? (
           <img src={imageSrc} className="bd-placeholder-img card-img-top" alt={altText} width="100%" height="225" />
         ) : (
-          <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg className="bd-placeholder-img card-img-top" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#55595c" />
             <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
@@ -17,7 +17,7 @@ function ProjectCard({ imageSrc, altText, badges, title, description, link }) {
         <div className="card-body">
           <h5>
             {badges.map((badge, index) => (
-              <span key={index} className={`badge bg-${badge.type} me-2`}>
+              <span key={index} className={`badge bg-${badge.type} me-2 rounded-pill`}>
                 {badge.text}
               </span>
             ))}
@@ -26,9 +26,9 @@ function ProjectCard({ imageSrc, altText, badges, title, description, link }) {
             <b>{title}</b><br />
             {description}
           </p>
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex justify-content-start align-items-center">
             <div className="btn-group">
-              <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">자세히보기</a>
+              <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">자세히보기</a>
             </div>
           </div>
         </div>
@@ -40,8 +40,8 @@ function ProjectCard({ imageSrc, altText, badges, title, description, link }) {
 function Projects() {
   return (
     <div className="album py-5 bg-light" id="projects">
-      <div className="container col-xxl-8">
-        <h2 className="pb-2 border-bottom">Projects</h2>
+      <div className="container col-xxl-6">
+        <h2 className="pb-2 text-center mb-5">Projects</h2>
 
         {/* 한 행에 두 개씩 배치되도록 설정 */}
         <div className="row row-cols-1 row-cols-md-2 g-3">
@@ -49,8 +49,9 @@ function Projects() {
             imageSrc="/img/holybean.jpg"
             altText="Holybean Project Image"
             badges={[
-              { text: 'Server', type: 'success' },
-              { text: 'Android', type: 'secondary' }
+              { text: 'Active', type: 'success' },
+              { text: 'Android', type: 'secondary' },
+              { text: 'AWS', type: 'secondary' }
             ]}
             title="HolyBean"
             description="제가 다니는 교회에서 사용중인 Android POS Application입니다."

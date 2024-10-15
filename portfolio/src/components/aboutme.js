@@ -1,43 +1,41 @@
 import React from "react";
 
-function PrimaryButton(props){
-  return <>
-      <a href={props.link} target="_blank" rel="noopener" className="btn btn-primary btn-lg px-4">{props.title}</a>
-  </>
-}
-
-function Careers(props){
-    return (
-        <>
-            <dt className="col-sm-5">{props.header}</dt>
-            <dd className="col-sm-5">{props.detail}</dd>
-        </>
-    );
-}
-
-function Aboutme(){
-    return <div className="container col-xxl-8 px-4 py-5" id="firstSection">
-    <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div className="col-10 col-sm-8 col-lg-6">
-        <img src="/img/main.jpg" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"/>
-      </div>
-      <div className="col-lg-6">
-        <h1 className="display-5 fw-bold lh-1 mb-3">안녕하세요,</h1>
-        <h1 className="display-5 fw-bold lh-1 mb-3">박범식입니다!</h1>
-        <p className="lead">사람들이 필요로 하는 서비스를 개발하는 개발자를 지향합니다.<br/>건국대학교 컴퓨터공학부 3학년이며, Server 관련한 공부하고 있습니다.</p>
-        <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-            <PrimaryButton link="https://github.com/SIKU-KR" title="GitHub"/>
-            <PrimaryButton link="https://cseant.tistory.com/" title="Blog"/>
+function AboutMeItem({ iconClass, title, description }) {
+  return (
+    <div className="col-lg-4 col-md-6">
+      <div className="d-flex flex-column align-items-center text-center">
+        <i className={`${iconClass} display-6 mb-2`}></i>
+        <div>
+          <h5 className="aboutme-title">{title}</h5>
+          <p className="aboutme-detail">{description}</p>
         </div>
-        <br/>
-        <h3 className="pb-2 border-bottom">Careers</h3>
-        <dl className="row">
-            <Careers header='GDG on Campus Konkuk' detail='24-25 Member (now)' />
-            <Careers header='Project-X Konkuk 2024' detail='Mentor' />
-        </dl>
       </div>
     </div>
-  </div>
+  );
+}
+
+function Aboutme() {
+  const aboutMeData = [
+    { iconClass: "bi bi-person-circle", title: "이름", description: "박범식" },
+    { iconClass: "bi bi-calendar-event", title: "생년월일", description: "2002.01.26" },
+    { iconClass: "bi bi-geo-alt", title: "위치", description: "서울특별시 광진구" },
+    { iconClass: "bi bi-telephone", title: "연락처", description: "010-5209-3212" },
+    { iconClass: "bi bi-envelope", title: "이메일", description: "bumshik0126@gmail.com" },
+    { iconClass: "bi bi-pencil", title: "학력", description: "건국대학교 컴퓨터공학부" },
+  ];
+
+  return (
+    <div className="py-5 bg-light">
+      <div className="container col-xxl-6" id="aboutMe">
+        <h2 className="text-center mb-5">ABOUT ME</h2>
+        <div className="row g-4 justify-content-center">
+          {aboutMeData.map((item, index) => (
+            <AboutMeItem key={index} iconClass={item.iconClass} title={item.title} description={item.description} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Aboutme;

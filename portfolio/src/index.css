@@ -1,29 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 }
 
+.navbar-brand {
+  font-family: "Open Sans", sans-serif;
+  font-variation-settings: "wght" 650;
+  font-size: 1.35rem;
+}
 
-.form-control-dark {
-    color: #fff;
-    background-color: var(--bs-dark);
-    border-color: var(--bs-gray);
-  }
-  .form-control-dark:focus {
-    color: #fff;
-    background-color: var(--bs-dark);
-    border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-  }
-  
-  .bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-  }
-  
-  .text-small {
-    font-size: 85%;
-  }
-  
-  .dropdown-toggle {
-    outline: 0;
-  }
+.nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-variation-settings: "wght" 900;
+}
+
+#title {
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
+.aboutme-title {
+  font-variation-settings: "wght" 700;
+}
+
+.bg-spring {
+  background-color: #D0F1A5;
+}
+
+.bg-arch {
+  background-color: black;
+  color: white;
+}
+
+.archive-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.archive-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
