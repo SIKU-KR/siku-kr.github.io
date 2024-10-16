@@ -27,7 +27,7 @@ function Stacks() {
           <StackItem iconId="aws" title="AWS" description="클라우드서비스를 사용하여 서비스를 구축합니다." buttonText="자세히보기" />
         </div>
         <p className="lead text-center">
-          이외에도, <strong>Kotlin, JavaScript, React, HTML/CSS </strong>을 사용합니다.
+          이외에도 <strong>Kotlin, JavaScript, React, HTML/CSS </strong>을 사용합니다.
         </p>
       </div>
     </div>
