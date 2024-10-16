@@ -122,7 +122,7 @@ function Projects() {
               descriptionList={["React.js를 사용한 포트폴리오 페이지 구성", "빌드부터 배포까지 하나의 스크립트로 진행되는 CI/CD 구축"]}
               tags={["Bootstrap", "React.js", "Github Pages"]}
               buttons={[{ text: "README", link: "/docs/portfolio/portfolio.html", isExternal: false },
-                { text: "README", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }
+                { text: "GitHub", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }
               ]}
               onClickReadme={handleClickReadme}
             />
