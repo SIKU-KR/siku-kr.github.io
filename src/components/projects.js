@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 
 function ProjectCard({ badges, title, descriptionList, period, tags, buttons, onClickReadme }) {
+  const handleButtonClick = (button) => {
+    if (button.isExternal) {
+      window.open(button.link, "_blank"); // Opens external links in a new tab
+    } else {
+      onClickReadme(button.link); // Handles internal README link
+    }
+  };
+
   return (
     <div className="col">
       <div className="card h-100 shadow-sm py-3 px-4 d-flex flex-column">
@@ -40,11 +48,7 @@ function ProjectCard({ badges, title, descriptionList, period, tags, buttons, on
         {/* 버튼 */}
         <div className="mt-auto">
           {buttons.map((button, index) => (
-            <button
-              key={index}
-              className="btn btn-sm btn-outline-primary me-2"
-              onClick={() => onClickReadme(button.link)}
-            >
+            <button key={index} className="btn btn-sm btn-outline-primary me-2" onClick={() => handleButtonClick(button)}>
               {button.text}
             </button>
           ))}
@@ -60,7 +64,7 @@ function Projects() {
 
   const handleClickReadme = async (link) => {
     try {
-      const response = await fetch(link);  // URL에서 HTML 파일 가져오기
+      const response = await fetch(link); // URL에서 HTML 파일 가져오기
       const htmlContent = await response.text(); // HTML 내용을 텍스트로 변환
       setReadmeContent(htmlContent);
       setModalTitle("README");
@@ -81,7 +85,7 @@ function Projects() {
           <div className="row row-cols-1 row-cols-md-2 g-3">
             <ProjectCard
               badges={[
-                { text: "Active", type: "success" },
+                { text: "ON", type: "success" },
                 { text: "Android", type: "secondary" },
                 { text: "Kotlin", type: "secondary" },
               ]}
@@ -89,12 +93,14 @@ function Projects() {
               period="2024.01 - 현재"
               descriptionList={["교회에서 운영하는 카페의 상황에 맞는 POS 시스템 필요", "Kotlin Android를 사용한 네이티브 애플리케이션 구현"]}
               tags={["Kotlin", "Android"]}
-              buttons={[{ text: "README", link: "/docs/holybean(android)/holybean.html" }]}  // 링크로 HTML 파일을 전달
+              buttons={[{ text: "README", link: "/docs/holybean(android)/holybean.html", isExternal: false },
+                { text: "GitHub", link: "https://github.com/SIKU-KR/HolyBean", isExternal: true }
+              ]}
               onClickReadme={handleClickReadme}
             />
             <ProjectCard
               badges={[
-                { text: "Active", type: "success" },
+                { text: "ON", type: "success" },
                 { text: "Lambda", type: "secondary" },
                 { text: "DynamoDB", type: "secondary" },
               ]}
@@ -102,12 +108,12 @@ function Projects() {
               period="2024.10 - 현재"
               descriptionList={["교회에서 운영하는 카페의 상황에 맞는 POS 시스템 필요", "AWS를 통한 서버리스 아키텍처 구현"]}
               tags={["AWS Lambda", "AWS DynamoDB", "JavaScript"]}
-              buttons={[{ text: "README", link: "/docs/holybean(server)/holybean.html" }]} 
+              buttons={[{ text: "README", link: "/docs/holybean(server)/holybean.html", isExternal: false }]}
               onClickReadme={handleClickReadme}
             />
             <ProjectCard
               badges={[
-                { text: "Active", type: "success" },
+                { text: "ON", type: "success" },
                 { text: "React.js", type: "secondary" },
                 { text: "CI/CD", type: "secondary" },
               ]}
@@ -115,11 +121,14 @@ function Projects() {
               period="2024.10 - 현재"
               descriptionList={["React.js를 사용한 포트폴리오 페이지 구성", "빌드부터 배포까지 하나의 스크립트로 진행되는 CI/CD 구축"]}
               tags={["Bootstrap", "React.js", "Github Pages"]}
-              buttons={[{ text: "README", link: "/docs/portfolio/portfolio.html" }]}
+              buttons={[{ text: "README", link: "/docs/portfolio/portfolio.html", isExternal: false },
+                { text: "README", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }
+              ]}
               onClickReadme={handleClickReadme}
             />
             <ProjectCard
               badges={[
+                { text: "OFF", type: "Danger" },
                 { text: "Spring", type: "secondary" },
                 { text: "MariaDB", type: "secondary" },
               ]}
@@ -127,7 +136,7 @@ function Projects() {
               period="2024.05 - 2024.10"
               descriptionList={["2024 실감미디어 경진대회", "XR을 통한 공간대여 서비스개선을 위한 RESTful API 작성"]}
               tags={["JAVA", "Spring Boot", "MariaDB"]}
-              buttons={[{ text: "README", link: "/docs/unspace/unspace.html" }]}
+              buttons={[{ text: "README", link: "/docs/unspace/unspace.html", isExternal: false }]}
               onClickReadme={handleClickReadme}
             />
           </div>
@@ -139,7 +148,9 @@ function Projects() {
         <div className="modal-dialog modal-lg">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="readmeModalLabel">{modalTitle}</h5>
+              <h5 className="modal-title" id="readmeModalLabel">
+                {modalTitle}
+              </h5>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
