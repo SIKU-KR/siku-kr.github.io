@@ -24,7 +24,7 @@ function NavLink(props) {
 
 function Navbar() {
   return (
-    <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark px-4">
+    <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark px-2">
       <div className="container col-xxl-6">
         <a className="navbar-brand" href="#">SIKU's Portfolio</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">

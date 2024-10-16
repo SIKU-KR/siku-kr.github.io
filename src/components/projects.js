@@ -102,7 +102,20 @@ function Projects() {
               period="2024.10 - 현재"
               descriptionList={["교회에서 운영하는 카페의 상황에 맞는 POS 시스템 필요", "AWS를 통한 서버리스 아키텍처 구현"]}
               tags={["AWS Lambda", "AWS DynamoDB", "JavaScript"]}
-              buttons={[{ text: "README", link: "<p>This is the content for Holybean project README.</p>" }]} 
+              buttons={[{ text: "README", link: "/docs/holybean(server)/holybean.html" }]} 
+              onClickReadme={handleClickReadme}
+            />
+            <ProjectCard
+              badges={[
+                { text: "Active", type: "success" },
+                { text: "React.js", type: "secondary" },
+                { text: "CI/CD", type: "secondary" },
+              ]}
+              title="포트폴리오 페이지"
+              period="2024.10 - 현재"
+              descriptionList={["React.js를 사용한 포트폴리오 페이지 구성", "빌드부터 배포까지 하나의 스크립트로 진행되는 CI/CD 구축"]}
+              tags={["Bootstrap", "React.js", "Github Pages"]}
+              buttons={[{ text: "README", link: "/docs/portfolio/portfolio.html" }]}
               onClickReadme={handleClickReadme}
             />
             <ProjectCard
@@ -114,7 +127,7 @@ function Projects() {
               period="2024.05 - 2024.10"
               descriptionList={["2024 실감미디어 경진대회", "XR을 통한 공간대여 서비스개선을 위한 RESTful API 작성"]}
               tags={["JAVA", "Spring Boot", "MariaDB"]}
-              buttons={[{ text: "README", link: "<p>This is the content for Unspace project README.</p>" }]}
+              buttons={[{ text: "README", link: "/docs/portfolio/unspace.html" }]}
               onClickReadme={handleClickReadme}
             />
           </div>
