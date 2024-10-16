@@ -127,7 +127,7 @@ function Projects() {
               period="2024.05 - 2024.10"
               descriptionList={["2024 실감미디어 경진대회", "XR을 통한 공간대여 서비스개선을 위한 RESTful API 작성"]}
               tags={["JAVA", "Spring Boot", "MariaDB"]}
-              buttons={[{ text: "README", link: "/docs/portfolio/unspace.html" }]}
+              buttons={[{ text: "README", link: "/docs/unspace/unspace.html" }]}
               onClickReadme={handleClickReadme}
             />
           </div>
