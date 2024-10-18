@@ -8,7 +8,13 @@ const careersData = [
     period: "2024.09 - 현재",
     description: "GDG on Campus Konkuk Member",
     tags: ["JAVA", "Spring"],
-    careerItems: [{ title: "스터디 참여", period: "2024.09 -", description: "1. 스프링 MVC 스터디 with Test\n2. Modern JAVA in Action 스터디(JAVA8)" }],
+    careerItems: [
+      {
+        title: "스터디 참여",
+        period: "2024.09 -",
+        description: "1. 스프링 MVC 스터디 with Test\n2. Modern JAVA in Action 스터디(JAVA8)",
+      }
+    ],
   },
   {
     logoSrc: "/img/projectx.jpg",
@@ -17,10 +23,20 @@ const careersData = [
     description: "이노베이션아카데미, 건국대에서 주관한 Project-X 참여",
     tags: ["JAVA", "Python"],
     careerItems: [
-      { title: "Project-X with Konkuk 2024", period: "2024.07 - 2024.07", description: "학생 멘토 참여" },
-      { title: "Project-X with Konkuk 2023", period: "2023.11", description: "참가 및 3위 입상" },
+      {
+        title: "Project-X with Konkuk 2024",
+        period: "2024.07 - 2024.07",
+        description: "학생 멘토 참여",
+        pdfLink: "/evidence/projectx_2024.pdf"
+      },
+      {
+        title: "Project-X with Konkuk 2023",
+        period: "2023.11",
+        description: "팀 3위 및 우수참여자 수상",
+        pdfLink: "/evidence/projectx_2023.pdf"
+      }
     ],
-  },
+  }
 ];
 
 function Careers() {

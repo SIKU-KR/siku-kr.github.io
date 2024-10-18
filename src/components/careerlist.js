@@ -11,18 +11,21 @@ function renderDescription(description) {
 }
 
 // CareerItem: 개별 경력 항목
-function CareerItem({ title, period, description }) {
+function CareerItem({ title, period, description, pdfLink }) {
   return (
     <div className="mb-3">
-      {" "}
-      {/* 줄 간격 좁힘 */}
-      <h5 className="fw-bold" style={{ marginBottom: "0.5rem", borderLeft: "4px solid black", paddingLeft: "10px" }}>
+      <h5 className="fw-bold" style={{ marginBottom: "0.5rem", borderLeft: "4px solid black", paddingLeft: "10px", display: "flex", alignItems: "center" }}>
         {title}
+        {pdfLink && (
+          <a href={pdfLink} target="_blank" rel="noopener noreferrer" className="ms-2" style={{ display: "inline-flex", alignItems: "center" }}>
+            <i className="bi bi-file-earmark-pdf-fill" style={{ color: "black", fontSize: "1.2rem", marginLeft: "8px" }}></i>
+          </a>
+        )}
       </h5>
       <p className="text-muted" style={{ marginBottom: "0.5rem" }}>
         {period}
       </p>
-      <p style={{ marginBottom: "0.5rem" }}>{renderDescription(description)}</p> {/* 줄바꿈 처리된 설명 */}
+      <p style={{ marginBottom: "0.5rem" }}>{renderDescription(description)}</p>
     </div>
   );
 }
@@ -54,7 +57,13 @@ function Career({ logoSrc, companyName, period, description, tags, careerItems }
 
           {/* Career Items */}
           {careerItems.map((item, index) => (
-            <CareerItem key={index} title={item.title} period={item.period} description={item.description} />
+            <CareerItem
+              key={index}
+              title={item.title}
+              period={item.period}
+              description={item.description}
+              pdfLink={item.pdfLink} // Added pdfLink
+            />
           ))}
         </div>
       </div>
