@@ -27,13 +27,13 @@ const careersData = [
         title: "Project-X with Konkuk 2024",
         period: "2024.07 - 2024.07",
         description: "학생 멘토 참여",
-        pdfLink: "/evidence/projectx_2024.pdf"
+        pdfLink: "https://siku-kr.github.io/pdf/project-x-2024.pdf"
       },
       {
         title: "Project-X with Konkuk 2023",
         period: "2023.11",
         description: "팀 3위 및 우수참여자 수상",
-        pdfLink: "/evidence/projectx_2023.pdf"
+        pdfLink: "https://siku-kr.github.io/pdf/project-x-2023.pdf"
       }
     ],
   }
