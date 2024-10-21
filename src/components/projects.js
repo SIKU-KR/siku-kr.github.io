@@ -128,7 +128,7 @@ function Projects() {
             />
             <ProjectCard
               badges={[
-                { text: "OFF", type: "Danger" },
+                { text: "OFF", type: "danger" },
                 { text: "Spring", type: "secondary" },
                 { text: "MariaDB", type: "secondary" },
               ]}

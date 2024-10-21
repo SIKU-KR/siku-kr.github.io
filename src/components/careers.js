@@ -19,13 +19,13 @@ const careersData = [
   {
     logoSrc: "/img/projectx.jpg",
     companyName: "Project-X with Konkuk",
-    period: "2023.11, 2024.04 - 2024.07",
+    period: "2023, 2024",
     description: "이노베이션아카데미, 건국대에서 주관한 Project-X 참여",
     tags: ["JAVA", "Python"],
     careerItems: [
       {
         title: "Project-X with Konkuk 2024",
-        period: "2024.07 - 2024.07",
+        period: "2024.05 - 2024.07",
         description: "학생 멘토 참여",
         pdfLink: "https://siku-kr.github.io/pdf/project-x-2024.pdf"
       },
