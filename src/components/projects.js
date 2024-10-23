@@ -108,7 +108,7 @@ function Projects() {
               period="2024.10 - 현재"
               descriptionList={["교회에서 운영하는 카페의 상황에 맞는 POS 시스템 필요", "AWS를 통한 서버리스 아키텍처 구현"]}
               tags={["AWS Lambda", "AWS DynamoDB", "JavaScript"]}
-              buttons={[{ text: "README", link: "/docs/holybean(server)/holybean.html", isExternal: false }]}
+              buttons={[{ text: "GitHub", link: "https://github.com/SIKU-KR/holybean-cloud", isExternal: true }]}
               onClickReadme={handleClickReadme}
             />
             <ProjectCard
@@ -120,8 +120,8 @@ function Projects() {
               title="포트폴리오 페이지"
               period="2024.10 - 현재"
               descriptionList={["React.js를 사용한 포트폴리오 페이지 구성", "빌드부터 배포까지 하나의 스크립트로 진행되는 CI/CD 구축"]}
-              tags={["Bootstrap", "React.js", "Github Pages"]}
-              buttons={[{ text: "README", link: "/docs/portfolio/portfolio.html", isExternal: false },
+              tags={["Bootstrap", "React.js", "Github Pages", "Shell Script"]}
+              buttons={[
                 { text: "GitHub", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }
               ]}
               onClickReadme={handleClickReadme}
