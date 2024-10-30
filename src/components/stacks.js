@@ -22,7 +22,7 @@ function Stacks() {
         <div className="row row-cols-1 row-cols-md-3 g-4 py-3 mb-3">
           <StackItem iconId="java" title="Java" description="JDK 17까지의 기능들을 이해하고 사용합니다." buttonText="자세히보기" />
           <StackItem iconId="spring" title="Spring" description="스프링 프레임워크를 이해하고 서버 애플리케이션을 구축합니다." buttonText="자세히보기" />
-          <StackItem iconId="go" title="Go" description="Go 언어의 문법을 이해하고 사용합니다." buttonText="자세히보기" />
+          <StackItem iconId="go" title="Go" description="Go 언어를 사용합니다." buttonText="자세히보기" />
           <StackItem iconId="sql" title="Database" description="SQL과 NoSQL을 사용하여 서비스를 개발합니다." buttonText="자세히보기" />
           <StackItem iconId="aws" title="AWS" description="클라우드서비스를 사용하여 서비스를 구축합니다." buttonText="자세히보기" />
           <StackItem iconId="python" title="Python" description="데이터처리와 알고리즘 문제풀이에 사용합니다." buttonText="자세히보기" />
