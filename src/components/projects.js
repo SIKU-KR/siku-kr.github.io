@@ -63,7 +63,6 @@ function Projects() {
   const [readmeContent, setReadmeContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
 
-
   const handleClickReadme = async (link) => {
     try {
       const response = await fetch(link);
@@ -98,8 +97,9 @@ function Projects() {
               period="2024.01 - 현재"
               descriptionList={["교회에서 운영하는 카페의 상황에 맞는 POS 시스템 필요", "Kotlin Android를 사용한 네이티브 애플리케이션 구현"]}
               tags={["Kotlin", "Android"]}
-              buttons={[{ text: "README", link: "https://siku-kr.github.io/docs/holybean(android)/readme.md", isExternal: false },
-                { text: "GitHub", link: "https://github.com/SIKU-KR/HolyBean", isExternal: true }
+              buttons={[
+                { text: "README", link: "https://siku-kr.github.io/docs/holybean(android)/readme.md", isExternal: false },
+                { text: "GitHub", link: "https://github.com/SIKU-KR/HolyBean", isExternal: true },
               ]}
               onClickReadme={handleClickReadme}
             />
@@ -126,9 +126,7 @@ function Projects() {
               period="2024.10 - 현재"
               descriptionList={["React.js를 사용한 포트폴리오 페이지 구성", "빌드부터 배포까지 하나의 스크립트로 진행되는 CI/CD 구축"]}
               tags={["Bootstrap", "React.js", "Github Pages", "Shell Script"]}
-              buttons={[
-                { text: "GitHub", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }
-              ]}
+              buttons={[{ text: "GitHub", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }]}
               onClickReadme={handleClickReadme}
             />
             <ProjectCard
@@ -159,7 +157,7 @@ function Projects() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <div dangerouslySetInnerHTML={{ __html: readmeContent }} />
+              <div style={{ maxWidth: "500px", width: "100%", height: "auto" }} dangerouslySetInnerHTML={{ __html: readmeContent }} />
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
