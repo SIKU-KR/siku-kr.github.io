@@ -31,24 +31,29 @@ SEWOO SLK-TS400 Bluetooth ESC/POS printer
 
 ## 4. 사진
 
-![2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건](https://SIKU-KR.github.io/docs/holybean(android)/image.png)
+<img src="https://SIKU-KR.github.io/docs/holybean(android)/image.png" alt="2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건" style="max-width: 500px; height: auto;">
+
 **2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건**
 
-![판매자 시점 UI](https://SIKU-KR.github.io/docs/holybean(android)/1.png)
+<img src="https://SIKU-KR.github.io/docs/holybean(android)/1.png" alt="판매자 시점 UI" style="max-width: 500px; height: auto;">
+
 **판매자 시점 UI**
 
-![오늘의 주문 목록 조회 UI](https://SIKU-KR.github.io/docs/holybean(android)/2.png)
+<img src="https://SIKU-KR.github.io/docs/holybean(android)/2.png" alt="오늘의 주문 목록 조회 UI" style="max-width: 500px; height: auto;">
+
 **오늘의 주문 목록 조회 UI**
 
-![매출 조회 UI (약 3개월 매출현황)](https://SIKU-KR.github.io/docs/holybean(android)/3.png)
+<img src="https://SIKU-KR.github.io/docs/holybean(android)/3.png" alt="매출 조회 UI (약 3개월 매출현황)" style="max-width: 500px; height: auto;">
+
 **매출 조회 UI (약 3개월 매출현황)**
 
-![메뉴 관리 UI](https://SIKU-KR.github.io/docs/holybean(android)/4.png)
+<img src="https://SIKU-KR.github.io/docs/holybean(android)/4.png" alt="메뉴 관리 UI" style="max-width: 500px; height: auto;">
+
 **메뉴 관리 UI**
 
-![실제 출력된 영수증의 사진](https://SIKU-KR.github.io/docs/holybean(android)/IMG_4935.jpg)
-**실제 출력된 영수증의 사진**
+<img src="https://SIKU-KR.github.io/docs/holybean(android)/IMG_4935.jpg" alt="실제 출력된 영수증의 사진" style="max-width: 500px; height: auto;">
 
+**실제 출력된 영수증의 사진**
 
 ## 5. 느낀점
 관련 지식(Kotlin, Android, SQL)이 전무한 상태로 개발을 시작하였습니다.
