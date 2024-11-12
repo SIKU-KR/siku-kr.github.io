@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MarkdownIt from "markdown-it";
 
 function ProjectCard({ badges, title, descriptionList, period, tags, buttons, onClickReadme }) {
   const handleButtonClick = (button) => {
@@ -62,14 +63,18 @@ function Projects() {
   const [readmeContent, setReadmeContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
 
+
   const handleClickReadme = async (link) => {
     try {
-      const response = await fetch(link); // URL에서 HTML 파일 가져오기
-      const htmlContent = await response.text(); // HTML 내용을 텍스트로 변환
+      const response = await fetch(link);
+      const markdownContent = await response.text();
+
+      const md = new MarkdownIt();
+      const htmlContent = md.render(markdownContent);
+
       setReadmeContent(htmlContent);
       setModalTitle("README");
 
-      // 모달 표시
       const modal = new window.bootstrap.Modal(document.getElementById("readmeModal"));
       modal.show();
     } catch (error) {
@@ -93,12 +98,12 @@ function Projects() {
               period="2024.01 - 현재"
               descriptionList={["교회에서 운영하는 카페의 상황에 맞는 POS 시스템 필요", "Kotlin Android를 사용한 네이티브 애플리케이션 구현"]}
               tags={["Kotlin", "Android"]}
-              buttons={[{ text: "README", link: "/docs/holybean(android)/holybean.html", isExternal: false },
+              buttons={[{ text: "README", link: "https://siku-kr.github.io/docs/holybean(android)/readme.md", isExternal: false },
                 { text: "GitHub", link: "https://github.com/SIKU-KR/HolyBean", isExternal: true }
               ]}
               onClickReadme={handleClickReadme}
             />
-            <ProjectCard
+            {/* <ProjectCard
               badges={[
                 { text: "ON", type: "success" },
                 { text: "Lambda", type: "secondary" },
@@ -110,7 +115,7 @@ function Projects() {
               tags={["AWS Lambda", "AWS DynamoDB", "JavaScript"]}
               buttons={[{ text: "GitHub", link: "https://github.com/SIKU-KR/holybean-cloud", isExternal: true }]}
               onClickReadme={handleClickReadme}
-            />
+            /> */}
             <ProjectCard
               badges={[
                 { text: "ON", type: "success" },
