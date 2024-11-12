@@ -1,13 +1,13 @@
-## 1. 프로젝트 개요
+### 1. 프로젝트 개요
 강원도 원주시 소재의 이룸교회의 카페에서 사용중인 Customized 안드로이드 POS 시스템입니다.
 
 Bluetooth 연결을 통한 ESC/POS 명령 타입의 영수증 프린터를 지원합니다.
 
-### 사용중인 하드웨어
+##### 사용중인 하드웨어
 Galaxy Tab A7 lite (8.7”) with Android 14
 SEWOO SLK-TS400 Bluetooth ESC/POS printer
 
-## 2. 기획 의도
+### 2. 기획 의도
 카드 결제를 사용하지 않는 카페로써 상용 POS 시스템이 필요하지 않았습니다.
 
 명확한 시스템이 존재하지 않았으므로 주문지를 종이로 프린트하여서 수기로 주문을 작성하였고,
@@ -17,45 +17,40 @@ SEWOO SLK-TS400 Bluetooth ESC/POS printer
 따라서 Android 기반의 POS 시스템 프로젝트를 시작하였습니다.
 
 
-### Why Kotlin-Android?
+##### Why Kotlin-Android?
 카페의 카운터 공간이 협소하여, 일반적인 데스크탑 또는 PC는 적합하지 않습니다.
 
 타겟 디바이스는 태블릿을 선택하였으며 JAVA에 대한 지식을 기반으로 Kotlin 과 Android를 학습하여 개발하기로 결정했습니다.
 
 
-## 3. 주요 기능
+### 3. 주요 기능
 주문받기
 블루투스를 이용한 영수증 출력 (ESC/POS)
 오늘 저장된 주문 목록 조회 및 상세 조회
 지정한 기간에 대한 매출 현황 보고서 조회 및 출력
 
-## 4. 사진
+### 4. 사진
 
-<img src="https://SIKU-KR.github.io/docs/holybean(android)/image.png" alt="2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건" style="max-width: 500px; height: auto;">
-
+![2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건](https://SIKU-KR.github.io/docs/holybean(android)/image.png)
 **2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건**
 
-<img src="https://SIKU-KR.github.io/docs/holybean(android)/1.png" alt="판매자 시점 UI" style="max-width: 500px; height: auto;">
-
+![판매자 시점 UI](https://SIKU-KR.github.io/docs/holybean(android)/1.png)
 **판매자 시점 UI**
 
-<img src="https://SIKU-KR.github.io/docs/holybean(android)/2.png" alt="오늘의 주문 목록 조회 UI" style="max-width: 500px; height: auto;">
-
+![오늘의 주문 목록 조회 UI](https://SIKU-KR.github.io/docs/holybean(android)/2.png)
 **오늘의 주문 목록 조회 UI**
 
-<img src="https://SIKU-KR.github.io/docs/holybean(android)/3.png" alt="매출 조회 UI (약 3개월 매출현황)" style="max-width: 500px; height: auto;">
-
+![매출 조회 UI (약 3개월 매출현황)](https://SIKU-KR.github.io/docs/holybean(android)/3.png)
 **매출 조회 UI (약 3개월 매출현황)**
 
-<img src="https://SIKU-KR.github.io/docs/holybean(android)/4.png" alt="메뉴 관리 UI" style="max-width: 500px; height: auto;">
-
+![메뉴 관리 UI](https://SIKU-KR.github.io/docs/holybean(android)/4.png)
 **메뉴 관리 UI**
 
-<img src="https://SIKU-KR.github.io/docs/holybean(android)/IMG_4935.jpg" alt="실제 출력된 영수증의 사진" style="max-width: 500px; height: auto;">
-
+![실제 출력된 영수증의 사진](https://SIKU-KR.github.io/docs/holybean(android)/IMG_4935.jpg)
 **실제 출력된 영수증의 사진**
 
-## 5. 느낀점
+
+### 5. 느낀점
 관련 지식(Kotlin, Android, SQL)이 전무한 상태로 개발을 시작하였습니다.
 
 프로젝트를 진행하면서 실제 생활 속 문제를 해결하는 좋은 경험이 되었으며,
@@ -64,7 +59,7 @@ SEWOO SLK-TS400 Bluetooth ESC/POS printer
 
 특히 개념으로만 알고있던 객체지향적 프로그래밍을 적용하는 좋은 기회가 되었습니다.
 
-## 6. 프로젝트 유지 보수 기록
+### 6. 프로젝트 유지 보수 기록
 - **v1.0.0 (24.01.28)** : 베타 테스팅 시작
 - **v1.1.0 (24.02.02)** : 기능 추가
   - 외상 구매 처리 기능
