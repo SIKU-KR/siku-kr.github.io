@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MarkdownIt from "markdown-it";
+import './css/projects.css'
 
 function ProjectCard({ badges, title, descriptionList, period, tags, buttons, onClickReadme }) {
   const handleButtonClick = (button) => {
@@ -157,7 +158,7 @@ function Projects() {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              <div style={{ maxWidth: "500px", width: "100%", height: "auto" }} dangerouslySetInnerHTML={{ __html: readmeContent }} />
+              <div dangerouslySetInnerHTML={{ __html: readmeContent }} />
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
