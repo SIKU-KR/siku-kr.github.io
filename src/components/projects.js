@@ -120,21 +120,23 @@ function Projects() {
             <ProjectCard
               badges={[
                 { text: "ON", type: "success" },
-                { text: "React.js", type: "secondary" },
+                { text: "WEB Frontend", type: "secondary" },
                 { text: "CI/CD", type: "secondary" },
               ]}
               title="포트폴리오 페이지"
               period="2024.10 - 현재"
               descriptionList={["React.js를 사용한 포트폴리오 페이지 구성", "빌드부터 배포까지 하나의 스크립트로 진행되는 CI/CD 구축"]}
               tags={["Bootstrap", "React.js", "Github Pages", "Shell Script"]}
-              buttons={[{ text: "GitHub", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }]}
+              buttons={[
+                { text: "README", link: "https://siku-kr.github.io/docs/portfolio/readme.md", isExternal: false },
+                { text: "GitHub", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }]}
               onClickReadme={handleClickReadme}
             />
             <ProjectCard
               badges={[
                 { text: "OFF", type: "danger" },
-                { text: "Spring", type: "secondary" },
-                { text: "MariaDB", type: "secondary" },
+                { text: "API Server", type: "secondary" },
+                { text: "Spring Boot", type: "secondary" },
               ]}
               title="Unspace"
               period="2024.05 - 2024.10"
