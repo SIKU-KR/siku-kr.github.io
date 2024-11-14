@@ -31,8 +31,9 @@ SEWOO SLK-TS400 Bluetooth ESC/POS printer
 
 ### 4. 사진
 
-![2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건](https://SIKU-KR.github.io/docs/holybean(android)/image.png)
-<br>
+![2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건](https://SIKU-KR.github.io/docs/holybean(android)/image.png)   
+
+
 **2024.2.4 ~ 2024.8.25 동안 앱으로 주문된 건수 : 1304건**
 
 ![판매자 시점 UI](https://SIKU-KR.github.io/docs/holybean(android)/1.png)   
