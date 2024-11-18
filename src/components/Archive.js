@@ -21,9 +21,9 @@ function ArchiveItem({ iconSrc, title, link, description }) {
 
 function Archive() {
   return (
-    <div className="bg-arch py-5" id="archiving">
+    <div className="bg-arch pt-5" id="archiving">
       <div className="container col-xxl-6 px-4">
-        <h2 className="pb-2 text-center mb-5">Archiving</h2>
+        <h2 className="pb-2 text-center mb-3">Archiving</h2>
         <div className="row g-5">
           <ArchiveItem
             iconSrc="/img/github.webp"

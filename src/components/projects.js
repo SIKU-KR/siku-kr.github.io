@@ -126,7 +126,7 @@ function Projects() {
               title="포트폴리오 페이지"
               period="2024.10 - 현재"
               descriptionList={["React.js를 사용한 포트폴리오 페이지 구성", "빌드부터 배포까지 하나의 스크립트로 진행되는 CI/CD 구축"]}
-              tags={["Bootstrap", "React.js", "Github Pages", "Shell Script"]}
+              tags={["React.js", "Github Pages", "Shell Script", "AWS Serverless"]}
               buttons={[
                 { text: "README", link: "https://siku-kr.github.io/docs/portfolio/readme.md", isExternal: false },
                 { text: "GitHub", link: "https://github.com/SIKU-KR/siku-kr.github.io", isExternal: true }]}
@@ -140,7 +140,7 @@ function Projects() {
               ]}
               title="Unspace"
               period="2024.05 - 2024.10"
-              descriptionList={["2024 실감미디어 경진대회", "XR을 통한 공간대여 서비스개선을 위한 RESTful API 작성"]}
+              descriptionList={["2024 실감미디어 경진대회 우수상 입상", "XR을 통한 공간대여 서비스개선을 위한 RESTful API 작성"]}
               tags={["JAVA", "Spring Boot", "MariaDB"]}
               buttons={[{ text: "README", link: "/docs/unspace/unspace.html", isExternal: false }]}
               onClickReadme={handleClickReadme}

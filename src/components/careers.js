@@ -7,7 +7,6 @@ const careersData = [
     companyName: "GDG on Campus Konkuk",
     period: "2024.09 - 현재",
     description: "GDG on Campus Konkuk Member",
-    tags: ["JAVA", "Spring"],
     careerItems: [
       {
         title: "스터디 참여",
@@ -17,11 +16,23 @@ const careersData = [
     ],
   },
   {
+    logoSrc: "/img/metamong.png",
+    companyName: "Metamong",
+    period: "2023.09 - 2024.08",
+    description: "XR 개발동아리 메타몽의 BE Developer",
+    careerItems: [
+      {
+        title: "2024 실감미디어 경진대회",
+        period: "2024.11",
+        description: "우수상 입상",
+      }
+    ],
+  },
+  {
     logoSrc: "/img/projectx.jpg",
     companyName: "Project-X with Konkuk",
     period: "2023, 2024",
     description: "이노베이션아카데미, 건국대에서 주관한 Project-X 참여",
-    tags: ["JAVA", "Python"],
     careerItems: [
       {
         title: "Project-X with Konkuk 2024",
@@ -43,7 +54,7 @@ function Careers() {
   return (
     <div className="py-5" id="careers">
       <div className="container col-xxl-6 px-4">
-        <h2 className="pb-2 text-center mb-4">Careers</h2>
+        <h2 className="pb-2 text-center mb-4">Community & Achievement</h2>
         <CareerList careers={careersData} />
       </div>
     </div>

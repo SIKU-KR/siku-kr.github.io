@@ -13,8 +13,8 @@ function renderDescription(description) {
 // CareerItem: 개별 경력 항목
 function CareerItem({ title, period, description, pdfLink }) {
   return (
-    <div className="mb-3">
-      <h5 className="fw-bold" style={{ marginBottom: "0.5rem", borderLeft: "4px solid black", paddingLeft: "10px", display: "flex", alignItems: "center" }}>
+    <div className="">
+      <h5 className="fw-bold" style={{ marginBottom: "0.5rem", borderLeft: "3px solid black", paddingLeft: "10px", display: "flex", alignItems: "center" }}>
         {title}
         {pdfLink && (
           <a href={pdfLink} target="_blank" rel="noopener noreferrer" className="ms-2" style={{ display: "inline-flex", alignItems: "center" }}>
@@ -42,18 +42,9 @@ function Career({ logoSrc, companyName, period, description, tags, careerItems }
 
         {/* Right Column: Career Details */}
         <div className="col-md-8 ps-4">
-          <h3 className="fw-bold">{companyName}</h3>
+          <h4 className="fw-bold">{companyName}</h4>
           <p className="text-muted">{period}</p>
           <p>{description}</p>
-
-          {/* Tags */}
-          <div className="mb-3">
-            {tags.map((tag, index) => (
-              <span key={index} className="badge bg-secondary me-2">
-                {tag}
-              </span>
-            ))}
-          </div>
 
           {/* Career Items */}
           {careerItems.map((item, index) => (
